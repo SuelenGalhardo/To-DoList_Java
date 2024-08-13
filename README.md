@@ -61,3 +61,17 @@ mvn help
 mvn exec:java -Dexec.mainClass="com.example.Main"
 mvn site
 mvn deploy
+
+
+notas:/*
+     * Metodos de HTTP para el servidor
+     * +GET - Buscar una información dentro de la base de datos/aplicacion
+     * +post - adicionar un datos/aplicacion
+     * +PUT- alterar una información o la base de datos/aplicacion/objeto , mas de
+     * una informacion
+     * +DELETE - remove un datos/aplicacion
+     * +PATCH - alterar solamente una parte información dato/aplicacion , somente
+     * una parte información
+     */
+
+    // Metodo (funcionalidad) de una clase
