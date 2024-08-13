@@ -15,7 +15,7 @@ https://efficient-sloth-d85.notion.site/Curso-de-Java-2408d11bfc3447e980fe9460b6
 - Spring Boot DevTools dependency
 - Spring Web Application
   
-Extensiones for VS code: 
+Extensions for VS code: 
 
 -**vscjava.vscode-java-pack**
     - vscjava.vscode-java-debug
@@ -26,3 +26,38 @@ Extensiones for VS code:
 - **vscjava.vscode-spring-initializr**
 - **vmware.vscode-spring-boot**
 - **vscjava.vscode-spring-boot-dashboard**
+- Lombok Annotations Support for VS Code
+
+
+
+
+
+
+Port:
+netstat -ano | findstr :8080
+detener proceso: taskkill /PID <PID> /F
+sudo kill -9 <PID>
+Stop-Process -Id 11028 -Force
+
+
+Commands mvn :
+
+mvn clean install
+mvn -v
+mvn --version
+mvn validate
+mvn compile
+mvn spring-boot:run
+mvn clean
+mvn clean package
+mvn clean install
+mvn archetype:generate
+mvn archetype:generate
+mvn clean install -P<profile-name>
+mvn plugin:goal
+mvn test
+mvn install
+mvn help
+mvn exec:java -Dexec.mainClass="com.example.Main"
+mvn site
+mvn deploy
