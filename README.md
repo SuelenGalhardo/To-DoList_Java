@@ -75,3 +75,20 @@ notas:/*
      */
 
     // Metodo (funcionalidad) de una clase
+
+modificadores de acceso en java: 
+public
+private
+protected   
+default
+
+tipos de datos: 
+String(text )
+Interger(int) numeros interos
+double (double) numeros 0.000
+Float(float) numeros 0.000
+date (Date)
+void (void) no hay returnt
+
+informaciones del usuario se encuenta dentro del Body @RequestBody
+
