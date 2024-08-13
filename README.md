@@ -26,7 +26,14 @@ Extensions for VS code:
 - **vscjava.vscode-spring-initializr**
 - **vmware.vscode-spring-boot**
 - **vscjava.vscode-spring-boot-dashboard**
-- Lombok Annotations Support for VS Code
+Librerias:
+- Lombok Annotations Support for VS Code: https://projectlombok.org/
+Lombok es una biblioteca de código abierto para Java que elimina la necesidad de escribir código repetitivo y tedioso
+-Spring Data JPA -  https://spring.io/projects/spring-data-jpa, no permite hacer la comunicacion con el banco de datos y maniplar los datos- ORM-Mapeamento de objetos relacional
+
+base de datos:
+- H2 DATABASE engine https://www.h2database.com/html/main.html 
+http://localhost:8080/h2-console
 
 
 
