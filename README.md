@@ -92,3 +92,8 @@ void (void) no hay returnt
 
 informaciones del usuario se encuenta dentro del Body @RequestBody
 
+getters 
+private: setters - atibuir metodo privado de una clase 
+
+setUsername para adicionar valor
+getUsername para buscar valor
