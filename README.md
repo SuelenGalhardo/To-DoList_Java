@@ -32,7 +32,7 @@ Lombok es una biblioteca de código abierto para Java que elimina la necesidad d
 -Spring Data JPA -  https://spring.io/projects/spring-data-jpa, no permite hacer la comunicacion con el banco de datos y maniplar los datos- ORM-Mapeamento de objetos relacional
 
 base de datos:
-- H2 DATABASE engine https://www.h2database.com/html/main.html 
+- H2 DATABASE engine //https://www.h2database.com/html/main.html 
 http://localhost:8080/h2-console
 
 
@@ -104,3 +104,6 @@ private: setters - atibuir metodo privado de una clase
 
 setUsername para adicionar valor
 getUsername para buscar valor
+
+
+ORM (Object-Relational Mapping) users table 
