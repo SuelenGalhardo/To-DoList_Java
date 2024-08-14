@@ -1,5 +1,6 @@
 package es.com.suelengalhardo.ToDoList.user;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,9 +11,26 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class UserController {
 
+    @Autowired
+    private IUserRepository userRepository;
+
     @PostMapping("/")
-    public void create(@RequestBody UserModel userModel) {
-        System.out.println(userModel.getName());
+    public UserModel create(@RequestBody UserModel userModel) {
+
+      var user =  this.userRepository.findByUsername(userModel.getUsername());
+
+      if (user != null) {
+        System.out.println("user this exist");
+        return null;
+        
+      }
+        var userCreated = this.userRepository.save(userModel);
+
+        return userCreated;
+
+    
+       
+
 
     }
 
