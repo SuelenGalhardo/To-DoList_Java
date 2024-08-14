@@ -69,6 +69,10 @@ mvn exec:java -Dexec.mainClass="com.example.Main"
 mvn site
 mvn deploy
 
+Status codes HTTP status code:
+//https://http.cat/
+https://http.cat/[status_code]
+
 
 notas:/*
      * Metodos de HTTP para el servidor
