@@ -68,10 +68,16 @@ mvn help
 mvn exec:java -Dexec.mainClass="com.example.Main"
 mvn site
 mvn deploy
+mvn spring-boot:run
+
 
 Status codes HTTP status code:
 //https://http.cat/
 https://http.cat/[status_code]
+
+A Java standalone implementation of the bcrypt password hash function:
+https://github.com/patrickfav/bcrypt
+https://favr.dev/opensource/bcrypt/
 
 
 notas:/*
