@@ -16,13 +16,9 @@ public class TaskController {
     private ITaskRepository taskRepository;
 
     @PostMapping("/")
-    public String postMethodName(@RequestBody String entity) {
-        //TODO: process POST request
-        
-        return entity;
-    }
-    
     public TaskModel create (@RequestBody TaskModel taskModel){
+
+        System.out.println("ggo controller");
          var task = this.taskRepository.save(taskModel);
          return task;
 
