@@ -117,3 +117,12 @@ getUsername para buscar valor
 
 
 ORM (Object-Relational Mapping) users table 
+
+{
+    "description":"Tarefa para gravar aula de Tasks do Curso de Spring Boot",
+    "title":"Gravaçao de aula",
+    "priority":"ALTA",
+    "startAt":"2024-10-20T12:30:00",
+    "endAt":"2024-10-17T12:30:00",
+    "idUser":"62e9b6b6-b95f-46fa-b1c8-f0817b065be8"
+}

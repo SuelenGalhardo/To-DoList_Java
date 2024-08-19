@@ -1,11 +1,22 @@
 package es.com.suelengalhardo.ToDoList.task;
 
+
+import java.time.LocalDateTime;
+import java.util.UUID;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+
 import org.springframework.web.bind.annotation.PostMapping;
 
+//import es.com.suelengalhardo.ToDoList.utils.Utils;
 
 @RestController
 @RequestMapping("/tasks")
@@ -16,12 +27,29 @@ public class TaskController {
     private ITaskRepository taskRepository;
 
     @PostMapping("/")
-    public TaskModel create (@RequestBody TaskModel taskModel){
+    public ResponseEntity create (@RequestBody TaskModel taskModel, HttpServletRequest request){
 
-        System.out.println("ggo controller");
-         var task = this.taskRepository.save(taskModel);
-         return task;
+        var idUser = request.getAttribute("idUser");
+		taskModel.setIdUser((UUID) idUser);
 
-    }
-    
+
+
+        var currentDate = LocalDateTime.now();
+
+        if (currentDate.isAfter(taskModel.getStartAt()) || currentDate.isAfter(taskModel.getEndAt()))  {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("La fecha de inicio  no puede ser posterior a la fecha actual");
+           
+            
+        } if (taskModel.getStartAt().isAfter(taskModel.getEndAt())) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body("La fecha de inicio debe ser menor a la fecha de terminado");
+        }
+	
+
+		var task = this.taskRepository.save(taskModel);
+        return  ResponseEntity.status(HttpStatus.OK).body(task);
+	
+	}
 }
+
+	
