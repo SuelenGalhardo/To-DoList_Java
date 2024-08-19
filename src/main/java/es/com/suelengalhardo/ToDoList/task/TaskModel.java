@@ -19,7 +19,7 @@ public class TaskModel {
     @Id
     @GeneratedValue(generator = "UUID")
 
-    private UUID taskId;
+    //private UUID taskId;
 
     private UUID id;
     private String description;
@@ -35,5 +35,11 @@ public class TaskModel {
 
     @CreationTimestamp
     private LocalDateTime createdAt;
+    public void setTitle(String title) throws Exception {
+        if (title == null || title.length() > 50) {
+          throw new Exception("el campo debe contener 50 caracteres");
+        }
+        this.title = title;
+      }
 
 }
