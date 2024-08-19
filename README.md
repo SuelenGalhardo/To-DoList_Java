@@ -68,6 +68,7 @@ mvn help
 mvn exec:java -Dexec.mainClass="com.example.Main"
 mvn site
 mvn deploy
+RODAR  APLICAÇAO: deploy build
 mvn spring-boot:run
 
 
@@ -78,6 +79,13 @@ https://http.cat/[status_code]
 A Java standalone implementation of the bcrypt password hash function:
 https://github.com/patrickfav/bcrypt
 https://favr.dev/opensource/bcrypt/
+
+DevTools-spring-boot: 
+https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/html/using-boot-devtools.html
+-Live Reload
+
+deploy en Render:
+
 
 
 notas:/*
